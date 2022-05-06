@@ -73,9 +73,9 @@ const Currency = () => {
         const vaues = rates.rate;
         console.log(vaues);
         if (check.length === 0) {
-          setCheck2(vaues);
-        } else {
           setCheck(vaues);
+        } else {
+          setCheck2(vaues);
         }
       })
       .catch((error) => console.log("error", error));
