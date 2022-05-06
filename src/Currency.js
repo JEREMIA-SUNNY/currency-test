@@ -6,7 +6,6 @@ const Currency = () => {
   const [firstinputs, setFirstinputs] = useState();
   const [check, setCheck] = useState();
   const [check2, setCheck2] = useState();
-  
 
   useEffect(() => {
     var myHeaders = new Headers();
@@ -74,9 +73,9 @@ const Currency = () => {
         const vaues = rates.rate;
         console.log(vaues);
         if (check.length === 0) {
-          setCheck(vaues);
-        } else {
           setCheck2(vaues);
+        } else {
+          setCheck(vaues);
         }
       })
       .catch((error) => console.log("error", error));
