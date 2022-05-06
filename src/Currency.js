@@ -81,7 +81,6 @@ const Currency = () => {
       .catch((error) => console.log("error", error));
   }, [firstselc]);
 
-  console.log(setConverted);
   return (
     <div className="maindiv">
       <div>
