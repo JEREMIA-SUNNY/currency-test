@@ -6,7 +6,7 @@ const Currency = () => {
   const [firstinputs, setFirstinputs] = useState();
   const [check, setCheck] = useState();
   const [check2, setCheck2] = useState();
-  const [converted, setConverted] = useState();
+  
 
   useEffect(() => {
     var myHeaders = new Headers();
