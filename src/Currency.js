@@ -4,8 +4,8 @@ const Currency = () => {
   const [firstselc, setFirtselc] = useState("USD");
   const [second, setSecond] = useState("INR");
   const [firstinputs, setFirstinputs] = useState();
-  const [check, setCheck] = useState();
-  const [check2, setCheck2] = useState();
+  const [check, setCheck] = useState(0);
+  const [check2, setCheck2] = useState(0);
 
   useEffect(() => {
     var myHeaders = new Headers();
@@ -71,9 +71,9 @@ const Currency = () => {
         console.log(rates);
 
         const vaues = rates.rate;
-        const deci=vaues.toFixed(2)
+        const deci = vaues.toFixed(2);
         console.log(vaues);
-        if (check.length === 0) {
+        if (check=== 0) {
           setCheck(deci);
         } else {
           setCheck2(deci);
