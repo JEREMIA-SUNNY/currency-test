@@ -71,11 +71,12 @@ const Currency = () => {
         console.log(rates);
 
         const vaues = rates.rate;
+        const deci=vaues.toFixed(2)
         console.log(vaues);
         if (check.length === 0) {
-          setCheck(vaues);
+          setCheck(deci);
         } else {
-          setCheck2(vaues);
+          setCheck2(deci);
         }
       })
       .catch((error) => console.log("error", error));
